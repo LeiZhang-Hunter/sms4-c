@@ -15,7 +15,7 @@ https://github.com/LeiZhang-Hunter/sms4
 ## 安装
 
 ```
-gcc -I openssl/ -I src/ main.c src/Command.c src/EncryptWorker.c src/SMS4Encrypt.c -L lib/ -lssl -lcrypto -o sms4
+gcc -static -static-libgcc -I openssl/ -I src/ main.c src/Command.c src/EncryptWorker.c src/SMS4Encrypt.c -L lib/ -lssl -lcrypto -o sms4
 ```
 
 可执行文件出现在build下面
